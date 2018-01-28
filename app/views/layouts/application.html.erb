@@ -5,11 +5,18 @@
     <%= csrf_meta_tags %>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
 
   <body>
-    <%= yield %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <div class="wrapper">
+      <div class="content">
+       <div class="container">
+         <h2 class="text-center">Twitter</h2>
+         <%= yield %>
+       </div>
+      </div>
+    </div>
+    <%= javascript_include_tag 'application' %>
   </body>
 </html>
