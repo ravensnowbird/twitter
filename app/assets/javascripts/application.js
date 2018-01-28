@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require theme/jquery-1.10.2.js
-//= require rails-ujs
+//= require jquery_ujs
 //= require theme/bootstrap.min.js
 //= require theme/paper-dashboard.js
 //= require tweets
