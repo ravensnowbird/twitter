@@ -1,24 +1,27 @@
-# README
+# Twitter clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Twitter clone is a simple system that lets users to
 
-Things you may want to cover:
+  - Create a tweet
+  - Retweet
+  - Delete tweet
 
-* Ruby version
+# Setup
 
-* System dependencies
+Clone repository, setup ruby 2.4.1 using RVM
+```
+bundle install && rake db:migrate
+rails server
+```
+visit localhost:3000/
 
-* Configuration
+### Credits
 
-* Database creation
+* [Paper Dashboard Template](https://www.creative-tim.com/product/paper-dashboard) - Bootstrap based Template.
 
-* Database initialization
+License
+----
 
-* How to run the test suite
+MIT
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Free Software, Hell Yeah!**
