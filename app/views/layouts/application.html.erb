@@ -11,10 +11,12 @@
   <body>
     <div class="wrapper">
       <div class="content">
-       <div class="container">
-         <h2 class="text-center">Twitter</h2>
-         <%= yield %>
-       </div>
+        <div class="main-panel">
+          <div class="container">
+            <h2 class="text-center">Twitter</h2>
+            <%= yield %>
+          </div>
+        </div>
       </div>
     </div>
     <%= javascript_include_tag 'application' %>

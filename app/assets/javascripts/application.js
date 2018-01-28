@@ -14,3 +14,4 @@
 //= require rails-ujs
 //= require theme/bootstrap.min.js
 //= require theme/paper-dashboard.js
+//= require tweets
