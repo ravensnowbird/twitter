@@ -58,4 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 
 #PG for heroku
-gem 'pg'
+group :production do
+  gem 'pg'
+end
