@@ -1,0 +1,1 @@
+$("#tweet-<%= @tweet.id %>").replaceWith("<%= escape_javascript(render partial: 'tweet', locals: {tweet: @tweet})%>");

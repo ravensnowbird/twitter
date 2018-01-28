@@ -1,0 +1,21 @@
+<li id="tweet-<%= tweet.id %>">
+  <div class="row">
+    <div class="col-xs-9">
+      <%= tweet.body %>
+      <br>
+      <span class="text-muted"><small><%= time_ago_in_words(tweet.created_at) %> ago</small></span>
+    </div>
+    <div class="col-xs-3 text-right">
+      <a href="<%= tweet_url(tweet, {tweet: {retweet_count: (tweet.retweet_count.to_i + 1)}}) %>"
+         data-method="put" data-remote="true"
+         class="btn btn-sm btn-info btn-icon">
+         <%= tweet.retweet_count %>&nbsp;<i class="fa fa-retweet"></i>
+      </a>&nbsp;&nbsp;
+      <a href="<%= tweet_url(tweet) %>"
+         data-method="delete"
+         data-remote="true"
+         class="btn btn-sm btn-danger btn-icon"><i class="fa fa-trash"></i>
+      </a>
+    </div>
+  </div>
+</li>

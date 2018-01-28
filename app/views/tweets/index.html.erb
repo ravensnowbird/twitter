@@ -9,18 +9,7 @@
       <div class="content">
         <ul class="list-unstyled team-members">
           <% @tweets.each do |tweet| %>
-            <li>
-              <div class="row">
-                <div class="col-xs-9">
-                  <%= tweet.body %>
-                  <br>
-                  <span class="text-muted"><small><%= time_ago_in_words(tweet.created_at) %> ago</small></span>
-                </div>
-                <div class="col-xs-3 text-right">
-                  <btn class="btn btn-sm btn-info btn-icon"><%= tweet.retweet_count %>&nbsp;<i class="fa fa-retweet"></i></btn>
-                </div>
-              </div>
-            </li>
+            <%= render partial: 'tweet', locals: {tweet: tweet} %>
           <% end %>
         </ul>
       </div>
