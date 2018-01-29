@@ -1,0 +1,2 @@
+$('#tweet_body').val("");
+$("#tweets").html("<%= escape_javascript(render partial: 'tweet_list', locals: {tweets: @tweets}) %>")

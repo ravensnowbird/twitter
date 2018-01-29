@@ -7,10 +7,8 @@
     </div>
     <div class="card m-t-10">
       <div class="content">
-        <ul class="list-unstyled team-members">
-          <% @tweets.each do |tweet| %>
-            <%= render partial: 'tweet', locals: {tweet: tweet} %>
-          <% end %>
+        <ul id="tweets" class="list-unstyled team-members">
+          <%= render partial: 'tweet_list', locals: {tweets: @tweets} %>
         </ul>
       </div>
     </div>

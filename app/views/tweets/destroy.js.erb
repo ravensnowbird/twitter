@@ -1,1 +1,1 @@
-$("#tweet-<%= @tweet.id %>").remove();
+$("#tweets").html("<%= escape_javascript(render partial: 'tweet_list', locals: {tweets: @tweets}) %>")
